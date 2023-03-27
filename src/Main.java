@@ -67,5 +67,20 @@ public class Main {
         int Arr6[][] = { { 10, 20, 15, 22, 35} };
 // Getting deep hashCode of arrays
         System.out.println(Arrays.deepHashCode(Arr6));
+
+        // regionMatches(): İki dizi bölgesinin eşit olup olmadığını test eder. boolean döndürür.
+        String str1 = "Merhaba, Dünya!";
+        String str2 = "merhaba, dünya!";
+
+        // Başlangıç pozisyonu, karşılaştırılacak dizeler ve
+        // Başlangıç dizininden itibaren kaç karakter karşılaştırılacağı
+        boolean result = str1.regionMatches(true, 0, str2, 0, 8);
+
+        if (result) {
+            System.out.println("İki dize de aynı karakterleri içeriyor.");
+        } else {
+            System.out.println("İki dize aynı karakterleri içermiyor.");
+
             }
+        }
         }
